@@ -15,7 +15,7 @@ const val REQUEST_CODE = 1
 
 class MainActivity : AppCompatActivity() {
 
-    private val endpoint = URL("https://etrust-sandbox.electronicid.eu/v2/")
+    private val endpoint = URL("https://etrust-dev.electronicid.eu/v2/")
 
     private var _binding: ActivityMainBinding? = null
     private val binding get() = _binding!!
@@ -27,9 +27,10 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
+
         binding.button.setOnClickListener {
             startActivityForResult(Intent(this, VideoIdSubstantialActivity::class.java).apply {
-                putExtra(VideoIdSubstantialActivity.ENVIRONMENT, Environment(endpoint, "{auth}"))
+                putExtra(VideoIdSubstantialActivity.ENVIRONMENT, Environment(endpoint, "PXBntiIvcfl1R0VrNk6woI9CBgOiC_Ghg8-tpyGwBsgaWL9eTyA26vh-OlFPsXfvjgiLcxJU_l3Fxr3v-lfNRhAdAiIYRlwcCrv3uNrSjqM="))
                 putExtra(VideoIdSubstantialActivity.ID_DOCUMENT, 62)
             }, REQUEST_CODE)
         }
