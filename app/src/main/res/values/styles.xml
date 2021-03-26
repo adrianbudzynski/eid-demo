@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
         <style name="NotificationLabel">
-<!--            <item name="eid_text_font">@font/alex_brush</item>-->
+            <item name="eid_text_font">@font/aclonica</item>
             <item name="eid_text_color">@color/purple_200</item>
             <item name="eid_label_background_color">@color/white</item>
         </style>
 
         <style name="NotificationFullScreen">
-<!--            <item name="eid_title_font">@font/alex_brush</item>-->
+            <item name="eid_title_font">@font/aclonica</item>
             <item name="eid_title_color">@color/purple_200</item>
-<!--            <item name="eid_description_font">@font/alex_brush</item>-->
+            <item name="eid_description_font">@font/aclonica</item>
             <item name="eid_description_color">@color/purple_500</item>
-<!--            <item name="eid_text_button_font">@font/alex_brush</item>-->
+            <item name="eid_text_button_font">@font/aclonica</item>
             <item name="eid_text_button_color">@color/purple_700</item>
             <item name="eid_background_button">@drawable/button_selector</item>
-<!--            <item name="eid_text_button_border_font">@font/alex_brush</item>-->
+            <item name="eid_text_button_border_font">@font/aclonica</item>
             <item name="eid_text_button_border_color">@color/purple_200</item>
             <item name="eid_background_button_border">@drawable/button_border_selector</item>
-<!--            <item name="eid_text_footer_font">@font/alex_brush</item>-->
+            <item name="eid_text_footer_font">@font/aclonica</item>
             <item name="eid_text_footer_color">@color/teal_200</item>
-<!--            <item name="eid_text_footer_action_font">@font/alex_brush</item>-->
+            <item name="eid_text_footer_action_font">@font/aclonica</item>
             <item name="eid_text_footer_action_color">@color/teal_700</item>
             <item name="eid_full_screen_background_color">@color/white</item>
             <item name="eid_box_stroke_color">@color/black</item>
@@ -27,9 +27,9 @@
 
         <style name="Spinner">
             <item name="eid_text_spinner_color">@color/purple_200</item>
-<!--            <item name="eid_text_spinner_font">@font/alex_brush</item>-->
+            <item name="eid_text_spinner_font">@font/aclonica</item>
             <item name="eid_text_value_color">@color/purple_500</item>
-<!--            <item name="eid_text_value_font">@font/alex_brush</item>-->
+            <item name="eid_text_value_font">@font/aclonica</item>
             <item name="eid_spinner_background_color">@color/white</item>
         </style>
 </resources>
