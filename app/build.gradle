@@ -54,10 +54,10 @@ dependencies {
     /**
      * SDK
      */
-    implementation 'eu.electronicid.videoid:sdk:0.1-experimental'
+    implementation 'eu.electronicid.videoid:sdk:1.0.1'
 
     /**
      * SDK-LITE
      */
-//    implementation 'eu.electronicid.videoid:sdk-lite:0.1-experimental'
+//    implementation 'eu.electronicid.videoid:sdk-lite:1.0.1'
 }

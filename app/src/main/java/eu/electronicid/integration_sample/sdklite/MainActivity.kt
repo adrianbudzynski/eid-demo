@@ -1,4 +1,5 @@
 //package eu.electronicid.integration_sample.sdklite
+//
 //import android.app.Activity
 //import android.content.Intent
 //import androidx.appcompat.app.AppCompatActivity
@@ -7,9 +8,9 @@
 //import eu.electronicid.integration_sample.databinding.ActivityMainBinding
 //import eu.electronicid.sdk.base.model.Environment
 //import eu.electronicid.sdk.base.ui.base.VideoIdServiceActivity
-//import eu.electronicid.sdklite.ui.medium.VideoIdMediumActivity
-//import eu.electronicid.sdklite.ui.smileid.SmileIdActivity
-//import eu.electronicid.sdklite.ui.substantial.VideoIdSubstantialActivity
+//import eu.electronicid.sdklite.ui.smileid.SmileIDActivity
+//import eu.electronicid.sdklite.ui.videoid.VideoIDActivity
+//import eu.electronicid.sdklite.ui.videoscan.VideoScanActivity
 //import java.net.URL
 //
 //const val REQUEST_CODE = 1
@@ -29,22 +30,25 @@
 //        setContentView(binding.root)
 //
 //        binding.buttonVideoidSubstantial.setOnClickListener {
-//            startActivityForResult(Intent(this, VideoIdSubstantialActivity::class.java).apply {
-//                putExtra(VideoIdSubstantialActivity.ENVIRONMENT, Environment(endpoint, "PXBntiIvcfl1R0VrNk6woI9CBgOiC_Ghg8-tpyGwBsgaWL9eTyA26vh-OlFPsXfvjgiLcxJU_l3Fxr3v-lfNRhAdAiIYRlwcCrv3uNrSjqM="))
-//                putExtra(VideoIdSubstantialActivity.ID_DOCUMENT, 62)
+//            startActivityForResult(Intent(this, VideoIDActivity::class.java).apply {
+//                putExtra(VideoIDActivity.ENVIRONMENT, Environment(endpoint, "{auth}"))
+//                putExtra(VideoScanActivity.LANGUAGE, "en")
+//                putExtra(VideoIDActivity.ID_DOCUMENT, 62)
 //            }, REQUEST_CODE)
 //        }
 //
 //        binding.buttonVideoidMedium.setOnClickListener {
-//            startActivityForResult(Intent(this, VideoIdMediumActivity::class.java).apply {
-//                putExtra(VideoIdMediumActivity.ENVIRONMENT, Environment(endpoint, "PXBntiIvcfl1R0VrNk6woI9CBgOiC_Ghg8-tpyGwBsgaWL9eTyA26vh-OlFPsXfvjgiLcxJU_l3Fxr3v-lfNRhAdAiIYRlwcCrv3uNrSjqM="))
-//                putExtra(VideoIdMediumActivity.ID_DOCUMENT, 62)
+//            startActivityForResult(Intent(this, VideoScanActivity::class.java).apply {
+//                putExtra(VideoScanActivity.ENVIRONMENT, Environment(endpoint, "{auth}"))
+//                putExtra(VideoScanActivity.LANGUAGE, "en")
+//                putExtra(VideoScanActivity.ID_DOCUMENT, 62)
 //            }, REQUEST_CODE)
 //        }
 //
 //        binding.buttonSmileid.setOnClickListener {
-//            startActivityForResult(Intent(this, SmileIdActivity::class.java).apply {
-//                putExtra(SmileIdActivity.ENVIRONMENT, Environment(endpoint, "PXBntiIvcfl1R0VrNk6woI9CBgOiC_Ghg8-tpyGwBsgaWL9eTyA26vh-OlFPsXfvjgiLcxJU_l3Fxr3v-lfNRhAdAiIYRlwcCrv3uNrSjqM="))
+//            startActivityForResult(Intent(this, SmileIDActivity::class.java).apply {
+//                putExtra(SmileIDActivity.ENVIRONMENT, Environment(endpoint, "{auth}"))
+//                putExtra(VideoScanActivity.LANGUAGE, "en")
 //            }, REQUEST_CODE)
 //        }
 //    }
