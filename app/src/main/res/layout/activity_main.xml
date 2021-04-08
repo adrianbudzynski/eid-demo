@@ -9,13 +9,13 @@
         android:id="@+id/button_videoid_substantial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start VideoIDSubstantial" />
+        android:text="Start VideoId" />
 
     <Button
         android:id="@+id/button_videoid_medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start VideoIDMedium" />
+        android:text="Start VideoScan" />
 
     <Button
         android:id="@+id/button_smileid"
