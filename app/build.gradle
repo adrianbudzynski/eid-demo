@@ -57,5 +57,5 @@ dependencies {
     /**
      * SDK-LITE
      */
-//    implementation 'eu.electronicid.videoid:sdk-lite:1.0.1'
+//    implementation 'eu.electronicid.videoid:sdk-lite:1.0.4'
 }
