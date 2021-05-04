@@ -13,8 +13,6 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -54,7 +52,7 @@ dependencies {
     /**
      * SDK
      */
-    implementation 'eu.electronicid.videoid:sdk:1.0.1'
+    implementation 'eu.electronicid.videoid:sdk:1.0.4'
 
     /**
      * SDK-LITE

@@ -20,7 +20,6 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keepclassmembers enum * { *; }
 -keep class eu.electronicid.sdk.modules.api.model.** { *; }
 -keep class eu.electronicid.sdk.domain.model.terms.** { *; }
 -keep class eu.electronicid.sdk.domain.model.videoid.event.** { *; }
@@ -35,3 +34,5 @@
 -keep class eu.electronicid.sdk.videoid.adhoc.model.FrameCaptureStart { *; }
 -keep class eu.electronicid.sdk.videoid.webrtc.model.* { *; }
 -keep class org.webrtc.**  { *; }
+-keep class eu.electronicid.sdk.discriminator.api.model.Bandwidth { *; }
+-keep class eu.electronicid.sdk.domain.model.Protocol { *; }
