@@ -1,4 +1,4 @@
-//package eu.electronicid.integration_sample.sdklite
+package eu.electronicid.integration_sample.sdklite
 //
 //import android.app.Activity
 //import android.app.ProgressDialog
@@ -81,14 +81,16 @@
 //    }
 //
 //    @Suppress("DEPRECATION")
-//    private fun check(service: () -> Unit) {
+//    private fun check(launchService: () -> Unit) {
 //        val progress: ProgressDialog = ProgressDialog.show(this, "Checking Requirements", "")
-//        CheckRequirements.getInstance(this).checkVideoScan(endpoint, {
+////        CheckRequirements.getInstance(this).checkVideoScan(...)
+////        CheckRequirements.getInstance(this).checkSmileID(...)
+//        CheckRequirements.getInstance(this).checkVideoID(endpoint, {
 //            progress.setMessage("$it/10")
 //        }) { result ->
 //            progress.dismiss()
 //            if (result.passed) {
-//                service()
+//                launchService()
 //            } else {
 //                AlertDialog.Builder(this)
 //                    .setCancelable(false)
