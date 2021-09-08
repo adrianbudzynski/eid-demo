@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import eu.electronicid.integration_sample.databinding.ActivityMainBinding
+import eu.electronicid.sdk.base.certid.CertIDActivity
 import eu.electronicid.sdk.base.model.Environment
 import eu.electronicid.sdk.base.ui.base.VideoIdServiceActivity
 import eu.electronicid.sdk.discriminator.CheckRequirements
@@ -78,6 +79,16 @@ class MainActivity : AppCompatActivity() {
                 }, REQUEST_CODE)
             }
         }
+
+        binding.buttonCertid.setOnClickListener {
+            startActivityForResult(Intent(this, CertIDActivity::class.java).apply {
+                putExtra(
+                    CertIDActivity.ENVIRONMENT,
+                    Environment(endpoint, "kO6nl2RJDYjqc98ju9n4dz5CdWBXTy_BNaWHloJtwxQk9JWy3JAQf3BpNIsaHiK0FdazQaDEmyHf66DgXioOhUIB3ZkUG1rZ7aHNpDSWtbk=")
+                )
+                putExtra(CertIDActivity.LANGUAGE, "en")
+            }, REQUEST_CODE)
+        }
     }
 
     @Suppress("DEPRECATION")
@@ -97,7 +108,6 @@ class MainActivity : AppCompatActivity() {
                     .setMessage("Requirements for VideoID not passed, please, try another onboarding solution")
                     .setPositiveButton("Ok", null)
                     .show()
-
             }
         }
     }

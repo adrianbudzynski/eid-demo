@@ -23,4 +23,10 @@
         android:layout_height="wrap_content"
         android:text="Start SmileID" />
 
+    <Button
+        android:id="@+id/button_certid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start CertID" />
+
 </LinearLayout>

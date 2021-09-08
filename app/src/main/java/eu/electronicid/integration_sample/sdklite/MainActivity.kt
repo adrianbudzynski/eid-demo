@@ -1,4 +1,5 @@
-package eu.electronicid.integration_sample.sdklite
+//package eu.electronicid.integration_sample.sdklite
+//
 //
 //import android.app.Activity
 //import android.app.ProgressDialog
@@ -8,6 +9,7 @@ package eu.electronicid.integration_sample.sdklite
 //import android.widget.Toast
 //import androidx.appcompat.app.AlertDialog
 //import eu.electronicid.integration_sample.databinding.ActivityMainBinding
+//import eu.electronicid.sdk.base.certid.CertIDActivity
 //import eu.electronicid.sdk.base.model.Environment
 //import eu.electronicid.sdk.base.ui.base.VideoIdServiceActivity
 //import eu.electronicid.sdk.discriminator.CheckRequirements
@@ -77,6 +79,18 @@ package eu.electronicid.integration_sample.sdklite
 //                    putExtra(VideoScanActivity.LANGUAGE, "en")
 //                }, REQUEST_CODE)
 //            }
+//        }
+//        binding.buttonCertid.setOnClickListener {
+//            startActivityForResult(Intent(this, CertIDActivity::class.java).apply {
+//                putExtra(
+//                    CertIDActivity.ENVIRONMENT,
+//                    Environment(
+//                        endpoint,
+//                        "kO6nl2RJDYjqc98ju9n4dz5CdWBXTy_BNaWHloJtwxQk9JWy3JAQf3BpNIsaHiK0FdazQaDEmyHf66DgXioOhUIB3ZkUG1rZ7aHNpDSWtbk="
+//                    )
+//                )
+//                putExtra(CertIDActivity.LANGUAGE, "en")
+//            }, REQUEST_CODE)
 //        }
 //    }
 //
