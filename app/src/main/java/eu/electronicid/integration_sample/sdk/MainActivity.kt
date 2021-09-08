@@ -96,6 +96,8 @@ class MainActivity : AppCompatActivity() {
         val progress: ProgressDialog = ProgressDialog.show(this, "Checking Requirements", "")
 //        CheckRequirements.getInstance(this).checkVideoScan(...)
 //        CheckRequirements.getInstance(this).checkSmileID(...)
+//        CheckRequirements.getInstance(this).checkCertID(...)
+
         CheckRequirements.getInstance(this).checkVideoID(endpoint, {
             progress.setMessage("$it/10")
         }) { result ->

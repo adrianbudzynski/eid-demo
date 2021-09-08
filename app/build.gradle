@@ -21,7 +21,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -51,10 +51,10 @@ dependencies {
     /**
      * SDK
      */
-    implementation 'eu.electronicid.videoid:sdk:1.0.0'
+    implementation 'eu.electronicid.android:sdk:1.0.0'
 
     /**
      * SDK-LITE
      */
-//    implementation 'eu.electronicid.videoid:sdk-lite:1.0.0'
+//    implementation 'eu.electronicid.android:sdk-lite:1.0.0'
 }
