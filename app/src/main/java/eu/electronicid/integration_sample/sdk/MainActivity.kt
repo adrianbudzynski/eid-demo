@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
                         VideoIDActivity.ENVIRONMENT,
                         Environment(
                             endpoint,
-                            "PXBntiIvcfl1R0VrNk6woI9CBgOiC_Ghg8-tpyGwBsgaWL9eTyA26vh-OlFPsXfvjgiLcxJU_l3Fxr3v-lfNRhAdAiIYRlwcCrv3uNrSjqM="
+                            "{auth}"
                         )
                     )
                     putExtra(VideoScanActivity.LANGUAGE, "en")
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                         VideoScanActivity.ENVIRONMENT,
                         Environment(
                             endpoint,
-                            "PXBntiIvcfl1R0VrNk6woI9CBgOiC_Ghg8-tpyGwBsgaWL9eTyA26vh-OlFPsXfvjgiLcxJU_l3Fxr3v-lfNRhAdAiIYRlwcCrv3uNrSjqM="
+                            "{auth}"
                         )
                     )
                     putExtra(VideoScanActivity.LANGUAGE, "en")
@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
                         SmileIDActivity.ENVIRONMENT,
                         Environment(
                             endpoint,
-                            "PXBntiIvcfl1R0VrNk6woI9CBgOiC_Ghg8-tpyGwBsgaWL9eTyA26vh-OlFPsXfvjgiLcxJU_l3Fxr3v-lfNRhAdAiIYRlwcCrv3uNrSjqM="
+                            "{auth}"
                         )
                     )
                     putExtra(VideoScanActivity.LANGUAGE, "en")
@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
             startActivityForResult(Intent(this, CertIDActivity::class.java).apply {
                 putExtra(
                     CertIDActivity.ENVIRONMENT,
-                    Environment(endpoint, "kO6nl2RJDYjqc98ju9n4dz5CdWBXTy_BNaWHloJtwxQk9JWy3JAQf3BpNIsaHiK0FdazQaDEmyHf66DgXioOhUIB3ZkUG1rZ7aHNpDSWtbk=")
+                    Environment(endpoint, "{auth}")
                 )
                 putExtra(CertIDActivity.LANGUAGE, "en")
             }, REQUEST_CODE)

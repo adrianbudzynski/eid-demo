@@ -41,7 +41,7 @@
 //                        VideoIDActivity.ENVIRONMENT,
 //                        Environment(
 //                            endpoint,
-//                            "PXBntiIvcfl1R0VrNk6woI9CBgOiC_Ghg8-tpyGwBsgaWL9eTyA26vh-OlFPsXfvjgiLcxJU_l3Fxr3v-lfNRhAdAiIYRlwcCrv3uNrSjqM="
+//                            "{auth}"
 //                        )
 //                    )
 //                    putExtra(VideoScanActivity.LANGUAGE, "en")
@@ -57,7 +57,7 @@
 //                        VideoScanActivity.ENVIRONMENT,
 //                        Environment(
 //                            endpoint,
-//                            "PXBntiIvcfl1R0VrNk6woI9CBgOiC_Ghg8-tpyGwBsgaWL9eTyA26vh-OlFPsXfvjgiLcxJU_l3Fxr3v-lfNRhAdAiIYRlwcCrv3uNrSjqM="
+//                            "{auth}"
 //                        )
 //                    )
 //                    putExtra(VideoScanActivity.LANGUAGE, "en")
@@ -73,7 +73,7 @@
 //                        SmileIDActivity.ENVIRONMENT,
 //                        Environment(
 //                            endpoint,
-//                            "PXBntiIvcfl1R0VrNk6woI9CBgOiC_Ghg8-tpyGwBsgaWL9eTyA26vh-OlFPsXfvjgiLcxJU_l3Fxr3v-lfNRhAdAiIYRlwcCrv3uNrSjqM="
+//                            "{auth}"
 //                        )
 //                    )
 //                    putExtra(VideoScanActivity.LANGUAGE, "en")
@@ -86,7 +86,7 @@
 //                    CertIDActivity.ENVIRONMENT,
 //                    Environment(
 //                        endpoint,
-//                        "kO6nl2RJDYjqc98ju9n4dz5CdWBXTy_BNaWHloJtwxQk9JWy3JAQf3BpNIsaHiK0FdazQaDEmyHf66DgXioOhUIB3ZkUG1rZ7aHNpDSWtbk="
+//                        "{auth}"
 //                    )
 //                )
 //                putExtra(CertIDActivity.LANGUAGE, "en")

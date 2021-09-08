@@ -36,3 +36,4 @@
 -keep class org.webrtc.**  { *; }
 -keep class eu.electronicid.sdk.discriminator.api.model.Bandwidth { *; }
 -keep class eu.electronicid.sdk.domain.model.Protocol { *; }
+-keep class eu.electronicid.sdk.domain.model.nfc.NFCTag { *; }
