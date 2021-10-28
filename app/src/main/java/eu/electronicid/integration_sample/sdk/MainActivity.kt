@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import eu.electronicid.integration_sample.databinding.ActivityMainBinding
+import eu.electronicid.integration_sample.sdk.custom.CustomVideoIDActivity
 import eu.electronicid.sdk.base.certid.CertIDActivity
 import eu.electronicid.sdk.base.model.Environment
 import eu.electronicid.sdk.base.ui.base.VideoIdServiceActivity
@@ -22,6 +23,7 @@ const val REQUEST_CODE = 1
 class MainActivity : AppCompatActivity() {
 
     private val endpoint = URL("https://etrust-dev.electronicid.eu/v2/")
+    private val custom = false
 
     private var _binding: ActivityMainBinding? = null
     private val binding get() = _binding!!
@@ -35,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.buttonVideoidSubstantial.setOnClickListener {
             check {
-                startActivityForResult(Intent(this, VideoIDActivity::class.java).apply {
+                startActivityForResult(Intent(this, (if (custom) CustomVideoIDActivity::class.java else VideoIDActivity::class.java)).apply {
                     putExtra(
                         VideoIDActivity.ENVIRONMENT,
                         Environment(

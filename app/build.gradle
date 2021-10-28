@@ -50,10 +50,10 @@ dependencies {
     /**
      * SDK
      */
-    implementation 'eu.electronicid.android:sdk:1.0.1'
+    implementation 'eu.electronicid.android:sdk:1.0.4'
 
     /**
      * SDK-LITE
      */
-//    implementation 'eu.electronicid.android:sdk-lite:1.0.1'
+//    implementation 'eu.electronicid.android:sdk-lite:1.0.4'
 }
