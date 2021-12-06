@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id "kotlin-kapt"
 }
 
 android {
@@ -42,6 +43,24 @@ android {
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
+
+    implementation deps.network.logging
+    implementation deps.network.moshi
+    implementation deps.network.retrofit
+    implementation deps.network.rxjava3
+
+
+    // Misc
+
+    implementation deps.misc.moshi
+    implementation deps.misc.moshi_adapter
+    kapt deps.misc.moshi_codegen
+
+    // Reactive
+
+    implementation deps.rx.android
+    implementation deps.rx.java
+    implementation deps.rx.kotlin
 
     /**
      uncomment only one SDK (SDK or SDK-LITE)
