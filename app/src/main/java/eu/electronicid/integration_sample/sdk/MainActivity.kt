@@ -31,7 +31,7 @@ const val REQUEST_CODE = 1
 
 class MainActivity : AppCompatActivity() {
 
-    private val endpoint = URL("https://etrust-dev.electronicid.eu/v2/")
+    private val endpoint = URL("https://etrust-sandbox.electronicid.eu/v2/")
     private val custom = false
 
     private var _binding: ActivityMainBinding? = null
@@ -105,7 +105,7 @@ class MainActivity : AppCompatActivity() {
         startActivityForResult(Intent(this, CertIDActivity::class.java).apply {
             putExtra(
                 CertIDActivity.ENVIRONMENT,
-                Environment(endpoint, "Bearer $authorization")
+                Environment(endpoint, "$authorization")
             )
             putExtra(CertIDActivity.LANGUAGE, "en")
         }, REQUEST_CODE)
@@ -117,7 +117,7 @@ class MainActivity : AppCompatActivity() {
                 SmileIDActivity.ENVIRONMENT,
                 Environment(
                     endpoint,
-                    "Bearer $authorization"
+                    "$authorization"
                 )
             )
             putExtra(VideoScanActivity.LANGUAGE, "en")
@@ -130,7 +130,7 @@ class MainActivity : AppCompatActivity() {
                 VideoScanActivity.ENVIRONMENT,
                 Environment(
                     endpoint,
-                    "Bearer $authorization"
+                    "$authorization"
                 )
             )
             putExtra(VideoScanActivity.LANGUAGE, "en")
@@ -151,7 +151,7 @@ class MainActivity : AppCompatActivity() {
                     VideoIDActivity.ENVIRONMENT,
                     Environment(
                         endpoint,
-                        "Bearer $authorization"
+                        "$authorization"
                     )
                 )
                 putExtra(VideoScanActivity.LANGUAGE, "en")
