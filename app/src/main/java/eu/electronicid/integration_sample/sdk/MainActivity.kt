@@ -22,7 +22,7 @@ const val REQUEST_CODE = 1
 
 class MainActivity : AppCompatActivity() {
 
-    private val endpoint = URL("https://etrust-dev.electronicid.eu/v2/")
+    private val endpoint = URL("https://etrust-sandbox.electronicid.eu/v2/")
     private val custom = false
 
     private var _binding: ActivityMainBinding? = null
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                         VideoIDActivity.ENVIRONMENT,
                         Environment(
                             endpoint,
-                            "{auth}"
+                            "yAZfA0D9yiMqZKbNPGIHUcetkDr7dpOZxYS61dWsOAbOxUbMdAAaPaFCxHMc9lhrFQ9_shp1RnNWzcAzoK49YwgMoyhJtzQf2jla2PYLgCI="
                         )
                     )
                     putExtra(VideoScanActivity.LANGUAGE, "en")
@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
                         VideoScanActivity.ENVIRONMENT,
                         Environment(
                             endpoint,
-                            "{auth}"
+                            "yAZfA0D9yiMqZKbNPGIHUcetkDr7dpOZxYS61dWsOAbOxUbMdAAaPaFCxHMc9lhrFQ9_shp1RnNWzcAzoK49YwgMoyhJtzQf2jla2PYLgCI="
                         )
                     )
                     putExtra(VideoScanActivity.LANGUAGE, "en")
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
                         SmileIDActivity.ENVIRONMENT,
                         Environment(
                             endpoint,
-                            "{auth}"
+                            "yAZfA0D9yiMqZKbNPGIHUcetkDr7dpOZxYS61dWsOAbOxUbMdAAaPaFCxHMc9lhrFQ9_shp1RnNWzcAzoK49YwgMoyhJtzQf2jla2PYLgCI="
                         )
                     )
                     putExtra(VideoScanActivity.LANGUAGE, "en")
@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity() {
             startActivityForResult(Intent(this, CertIDActivity::class.java).apply {
                 putExtra(
                     CertIDActivity.ENVIRONMENT,
-                    Environment(endpoint, "{auth}")
+                    Environment(endpoint, "yAZfA0D9yiMqZKbNPGIHUcetkDr7dpOZxYS61dWsOAbOxUbMdAAaPaFCxHMc9lhrFQ9_shp1RnNWzcAzoK49YwgMoyhJtzQf2jla2PYLgCI=")
                 )
                 putExtra(CertIDActivity.LANGUAGE, "en")
             }, REQUEST_CODE)
